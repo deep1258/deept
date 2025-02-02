@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0d0d2b;
+  --foreground: #ffffff;
+  --primary: #3a86ff;
+  --secondary: #8338ec;
+  --accent: #ff006e;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Inter", sans-serif;
+}
+
+.primary-bg {
+  background-color: var(--primary);
+}
+
+.secondary-bg {
+  background-color: var(--secondary);
+}
+
+.accent-bg {
+  background-color: var(--accent);
+}
+
+.primary-text {
+  color: var(--primary);
+}
+
+.secondary-text {
+  color: var(--secondary);
+}
+
+.accent-text {
+  color: var(--accent);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a86ff;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a76ef;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(45deg, var(--primary), var(--accent));
+}
+
+/* Glowing effect */
+.glow {
+  box-shadow: 0 0 10px var(--primary);
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease;
+}
+
